@@ -4,7 +4,7 @@ namespace Biblioteka
     {
         public string Title { get; }
         public string Author { get; }
-        //IsBorrowed ir private set, jo tikai Book klase var mainît ðo stâvokli caur Borrow() un Return() metodçm, nodroðinot datu droðîbu.
+        //IsBorrowed ir private set, jo tikai Book klase var mainit so stavokli caur Borrow() un Return() metodem, nodrosinot datu drosibu.
         public bool IsBorrowed { get; private set; }
 
         public Book(string title, string author)
@@ -35,7 +35,7 @@ namespace Biblioteka
         }
     }
 
-    //BookPrinter ir atseviðía klase, jo tâ atbild tikai par grâmatas informâcijas attçloðanu, nevis paðas grâmatas stâvokïa pârvaldîbu (Single Responsibility Principle).
+    //BookPrinter ir atseviska klase, jo ta atbild tikai par gramatas informacijas atteloðanu, nevis pasas gramatas stavokla parvaldibu (Single Responsibility Principle).
     public class BookPrinter
     {
         public void Print(Book book)
